@@ -1,6 +1,6 @@
 var express = require('express')
-var app = express();
-var buff = fs.readFileSync('index.html') 
+var app = express()
+var buff = fs.readFileSync('index.html'); 
 
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
